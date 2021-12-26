@@ -4,92 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
     <title>TEST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <p class="site-title-sub">Meet me.</p>
-        <h1 class="site-title">Web designe portfolio</h1>
-        <div class="buttons">
-            <a class="button" href="#about">LEARN MORE</a>
-            <a class="button button-showy" href="#contact">SEND MESSAGE</a>
-        </div>
-    </header>
-    <!-- about -->
-    <section class="about" id="about">
-        <h2 class="heading">ABOUT ME</h2>
-        <p class="about-text">
-            はじめまして。AAAAAAAAAAAAAAAA<br>
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            AAAAAAAAAAAAAAA
-        </p>
-        <p class="about-text">
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br>
-            SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-        </p>
-    </section>
-    <!-- work -->
-    <section class="works">
-        <h2 class="heading">WORKS</h2>
-        <div class="works-wrapper">
-            <div class="work-box tree">
-                <img class="work-image" src="images/tree.jpg" alt="事例1">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            ひとつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
+    <div id="splash">
+        <div id="splash_text"></div>
+    </div>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <p class="site-title-sub">Meet me.</p>
+            <h1 class="site-title">Web designe portfolio</h1>
+            <div class="buttons">
+                <a class="button" href="#about">LEARN MORE</a>
+                <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+            </div>
+        </header>
+        <!-- about -->
+        <section class="about" id="about">
+            <h2 class="heading">ABOUT ME</h2>
+            <p class="about-text">
+                はじめまして。AAAAAAAAAAAAAAAA<br>
+                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                AAAAAAAAAAAAAAA
+            </p>
+            <p class="about-text">
+                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br>
+                SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+            </p>
+        </section>
+        <!-- work -->
+        <section class="works">
+            <h2 class="heading">WORKS</h2>
+            <div class="works-wrapper">
+                <div class="work-box tree">
+                    <img class="work-image" src="images/tree.jpg" alt="事例1">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-text">
+                                ひとつめの制作事例が入ります。<br>
+                                簡単な説明が入ります。<br>
+                                使用ツール：XXX, XXX, XXX<br>
+                                <a href="#" class="button button-ghost">READ MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-box building">
+                    <img class="work-image" src="images/building.jpg" alt="事例2">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-text">
+                                ふたつめの制作事例が入ります。<br>
+                                簡単な説明が入ります。<br>
+                                使用ツール：XXX, XXX, XXX<br>
+                                <a href="#" class="button button-ghost">READ MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-box lake">
+                    <img class="work-image" src="images/lake.jpg" alt="事例3">
+                    <div class="work-description">
+                        <div class="work-description-inner">
+                            <p class="work-text">
+                                みっつめの制作事例が入ります。<br>
+                                簡単な説明が入ります。<br>
+                                使用ツール：XXX, XXX, XXX<br>
+                                <a href="#" class="button button-ghost">READ MORE</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="work-box building">
-                <img class="work-image" src="images/building.jpg" alt="事例2">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            ふたつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
+        </section>
+        <!-- skills -->
+        <section class="skills">
+            <h2 class="heading">MY SKILLS</h2>
+            <div class="skills-wrapper">
+                <div class="skill-box">
+                    <i class="skill-icon fab fa-html5"></i>
+                    <div class="skill-title">HTML</div>
+                    <p class="skill-text">
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fab fa-css3-alt"></i>
+                    <div class="skill-title">CSS</div>
+                    <p class="skill-text">
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA
+
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fab fa-js"></i>
+                    <div class="skill-title">JavaScript</div>
+                    <p class="skill-text">
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fab fa-react"></i>
+                    <div class="skill-title">react</div>
+                    <p class="skill-text">
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA
+                    </p>
+                </div>
+                <div class="skill-box">
+                    <i class="skill-icon fab fa-laravel"></i>
+                    <div class="skill-title">Laravel</div>
+                    <p class="skill-text">
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA<br>
+                        AAAAAAAAAAAAAAA
+                    </p>
                 </div>
             </div>
-            <div class="work-box lake">
-                <img class="work-image" src="images/lake.jpg" alt="事例3">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            みっつめの制作事例が入ります。<br>
-                            簡単な説明が入ります。<br>
-                            使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- skills -->
-    <section class="skills">
-    </section>
-    <!-- contact -->
-    <section class="contact" id="contact">
-    </section>
-    <!-- footer -->
-    <footer class="footer">
-    </footer>
+        </section>
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <h2 class="heading">CONTACT</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="name">
+                <textarea name="message" placeholder="message"></textarea>
+                <input type="submit" value="SEND">
+            </form>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            &copy; sample
+        </footer>
+    </div>
+    <!--==============JQuery===============-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用※対応しなければ削除してください-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!--自作のJS-->
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-2/js/4-1-2.js"></script>
 </body>
 
 </html>

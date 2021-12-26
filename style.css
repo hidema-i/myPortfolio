@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------------------
  * base
  * -------------------------------- */
@@ -6,7 +7,7 @@ html {
 }
 
 body {
-  background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
+  background: #151515 url("../images/night-sky.jpg") no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -46,6 +47,35 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg {
+  height: 2px;
+}
+
+/*========= レイアウトのためのCSS ===============*/
 .header {
   padding: 170px 30px 80px;
 }
@@ -147,15 +177,15 @@ body {
 }
 
 .work-box.tree::after {
-  background-image: url("../images/tree.jpg");
+  background-color: #2eafaf;
 }
 
 .work-box.building::after {
-  background-image: url("../images/building.jpg");
+  background-color: #80c5c5;
 }
 
 .work-box.lake::after {
-  background-image: url("../images/lake.jpg");
+  background-color: #09cece;
 }
 
 .work-description {
@@ -186,5 +216,173 @@ body {
   width: 60%;
   margin-top: 20px;
   padding: 3px;
+}
+
+.skills {
+  padding: 80px;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+}
+
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #0672b9;
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form textarea:focus {
+  -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+  /* --- works --- */
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    -webkit-transform: none;
+            transform: none;
+  }
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0;
+  }
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
